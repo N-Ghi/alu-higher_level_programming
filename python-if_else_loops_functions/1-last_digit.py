@@ -13,5 +13,5 @@ elif last_digit_with_sign == 0:
 else:
     comparison_text = "and is less than 6 and not 0"
 
-print(f"Last digit of {number} is {last_digit_with_sign} is {comparison_text}")
+print(f"Last digit of {number} is {last_digit_with_sign} {comparison_text}")
 

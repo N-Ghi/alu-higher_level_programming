@@ -7,4 +7,6 @@ if int(number[-1]) > 5:
 elif int(number[-1]) == 0:
     print(f'Last digit of {number} is {number[-1]} and is 0')
 elif int(number[-1]) < 6 and number[-1] != 0:
-    print(f'Last digit of {number} is {number[-1]} and is less than 6 and not 0') 
+    print(f'Last digit of {number} is {number[-1]} and is less than 6 and not 0')
+     if int(number > 0):
+         print(f'Last digit of {number} is -{number[-1]} and is less than 6 and not 0')

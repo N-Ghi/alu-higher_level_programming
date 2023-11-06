@@ -2,7 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
     if matrix is None:
         print(" ")
-        return
+        #return
     for row in matrix:
         for i, num in enumerate(row):
             if i < len(row) - 1:

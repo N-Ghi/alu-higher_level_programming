@@ -4,7 +4,7 @@ def divisible_by_2(my_list=[]):
     if not my_list:
         return
     for item in my_list:
-        if item % 2 != 0:
-            print('{:d} is not divisible by 2'.format(item))
+        if item % 2 == 0:
+            print("{:d} {:s} divisible by 2".format(item, "is"))
         else:
-            print('{:d} is divisible by 2')
+            print("{:d} {:s} divisible by 2".format(item, "is not"))

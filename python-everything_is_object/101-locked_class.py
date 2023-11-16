@@ -3,7 +3,6 @@
 
 
 class LockedClass:
-"""Doesn't allow the creation of other attributes"""
 
 
     __slots__ = ["first_name"]

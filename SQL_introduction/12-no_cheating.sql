@@ -1,2 +1,2 @@
 -- Updating Bob's score
-UPDATE TABLE second_table score=10 WHERE name="Bob";
+UPDATE second_table SET score=10 WHERE name="Bob";

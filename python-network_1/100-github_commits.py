@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # Comment
+"""
+    Documentation
+"""
 import sys
 import requests
 

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""Documentation"""
+"""Documentation"""
 
 
 import urllib.request

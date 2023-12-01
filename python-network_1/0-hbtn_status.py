@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-"""Documentation"""
-
-
+"""Documented"""
 import urllib.request
 
+url = 'https://intranet.hbtn.io/status'
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13) '
+                  'AppleWebKit/605.1.15 (KHTML, like Gecko) '
+                  'Chrome/116.0.5845.187 Safari/605.1.15',
+}
 
-if __name__ == '__main__':
-    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
-        content = response.read()
-        print("Body response:")
-        print("\t- type: {}".format(type(content)))
-        print("\t- content: {}".format(content))
-        print("\t- utf8 content: {}".format(content.decode("utf-8")))
+req = urllib.request.Request(url, headers=headers)
+with urllib.request.urlopen(req) as response:
+    content = response.read()
+    print("Body response:")
+    print("\t- type:", type(content))
+    print("\t- content:", content)
+    print("\t- utf8 content:", content.decode("utf-8"))

@@ -1,0 +1,1 @@
+Now we start on a JavaScript journey.

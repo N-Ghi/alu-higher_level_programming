@@ -8,7 +8,7 @@ const Rectangle = class Rectangle {
   }
 
   print () {
-    let prints = "";
+    let prints = '';
     for (let xx = 0; xx < this.height; xx++) {
       for (let yy = 0; yy < this.width; yy++) {
         prints = prints + 'X';

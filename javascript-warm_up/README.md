@@ -1,1 +1,1 @@
-Now we start on a JavaScript journey.
+Now we start on a JavaScript journey

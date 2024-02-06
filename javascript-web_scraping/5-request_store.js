@@ -8,7 +8,7 @@ request(process.argv[2], function (error, response, body) {
     console.error(error);
   }
   try {
-    fs.writeFile(process.argv[3], body, "utf8", function (err, result) {
+    fs.writeFile(process.argv[3], body, 'utf8', function (err, result) {
       if (err) console.log(err);
     });
   } catch (err) {

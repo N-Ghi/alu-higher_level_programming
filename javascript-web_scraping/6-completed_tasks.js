@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const request = require("request");
+const request = require('request');
 
 if (process.argv.length > 2) {
   const apiUrl = process.argv[2];
@@ -38,5 +38,5 @@ if (process.argv.length > 2) {
     }
   });
 } else {
-  console.log("Please provide the API URL as an argument.");
+  console.log('Please provide the API URL as an argument.');
 }

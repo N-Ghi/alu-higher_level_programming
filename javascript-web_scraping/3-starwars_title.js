@@ -9,12 +9,14 @@ if (process.argv.length > 2) {
     if (error) {
       console.error(`An error occurred while making the request: ${error}`);
     } else if (response.statusCode !== 200) {
-      console.error(`Error: ${response.statusCode} - ${response.statusMessage}`);
+      console.error(
+        `Error: ${response.statusCode} - ${response.statusMessage}`
+      );
     } else {
       const movie = JSON.parse(body);
       console.log(movie.title);
     }
   });
 } else {
-  console.log('Please provide the movie ID as an argument.');
+  console.log("Please provide the movie ID as an argument.");
 }

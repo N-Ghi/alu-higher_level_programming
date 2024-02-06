@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const request = require('request');
+const request = require("request");
 
 if (process.argv.length > 2) {
   const apiUrl = process.argv[2];
@@ -12,7 +12,9 @@ if (process.argv.length > 2) {
     }
 
     if (response.statusCode !== 200) {
-      console.error(`Error: ${response.statusCode} - ${response.statusMessage}`);
+      console.error(
+        `Error: ${response.statusCode} - ${response.statusMessage}`
+      );
       return;
     }
 
@@ -20,7 +22,7 @@ if (process.argv.length > 2) {
       const tasks = JSON.parse(body);
       const completedTasksByUser = {};
 
-      tasks.forEach(task => {
+      tasks.forEach((task) => {
         if (task.completed) {
           if (completedTasksByUser[task.userId]) {
             completedTasksByUser[task.userId]++;
@@ -36,5 +38,5 @@ if (process.argv.length > 2) {
     }
   });
 } else {
-  console.log('Please provide the API URL as an argument.');
+  console.log("Please provide the API URL as an argument.");
 }

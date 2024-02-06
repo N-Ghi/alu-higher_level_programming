@@ -12,5 +12,5 @@ if (process.argv.length > 2) {
     }
   });
 } else {
-  console.log('provide the URL as an argument.');
+  console.log("provide the URL as an argument.");
 }
